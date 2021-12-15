@@ -1,0 +1,37 @@
+{
+  "groups": [
+    {
+      "name": "rany.ops.message",
+      "type": "com.rany.ops.sms.core.SmsConfigProperties",
+      "sourceType": "com.rany.ops.sms.core.SmsConfigProperties"
+    },
+    {
+      "name": "rany.ops.message.sms",
+      "type": "com.rany.ops.sms.core.SmsConfigProperties$Sms",
+      "sourceType": "com.rany.ops.sms.core.SmsConfigProperties",
+      "sourceMethod": "getSms()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "rany.ops.message.sms.fake-account",
+      "type": "java.lang.String",
+      "description": "伪装账号 如果有值且fakeAction为真，则所有短信都会被拦截发送至该伪装账号 如果无值且fakeAction为真，则不会发生发送短信的动作，但是会返回发送成功",
+      "sourceType": "com.rany.ops.sms.core.SmsConfigProperties$Sms"
+    },
+    {
+      "name": "rany.ops.message.sms.fake-action",
+      "type": "java.lang.Boolean",
+      "description": "伪装动作：如果为真则不会发送短信到目标用户",
+      "sourceType": "com.rany.ops.sms.core.SmsConfigProperties$Sms",
+      "defaultValue": false
+    },
+    {
+      "name": "rany.ops.message.sms.fake-idd",
+      "type": "java.lang.String",
+      "sourceType": "com.rany.ops.sms.core.SmsConfigProperties$Sms",
+      "defaultValue": "+86"
+    }
+  ],
+  "hints": []
+}

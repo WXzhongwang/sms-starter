@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+org.rany.ops.sms.core.SmsAutoConfiguration
