@@ -119,14 +119,13 @@
         </plugins>
     </build>
 
-
     <distributionManagement>
         <repository>
-            <id>rdc-release</id>
+            <id>private-releases</id>
             <url>https://packages.aliyun.com/maven/repository/2470424-release-mtB7Nz</url>
         </repository>
         <snapshotRepository>
-            <id>rdc-snapshot</id>
+            <id>private-snapshots</id>
             <url>https://packages.aliyun.com/maven/repository/2470424-snapshot-M3PWj7</url>
         </snapshotRepository>
     </distributionManagement>
